@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Calc.js"></script>
+    <link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+    <div class = 'result'>
+        <input type="number" placeholder="val" id="v1" oninput="inputCheck(this)">
+        <select name="" id="type">
+        <option value="-">Minus</option>
+        <option value="+" selected>Plus</option>
+        <option value="*">Multiple</option>
+        <option value="/">Divide</option>
+        <option value="%">Mod</option>
+        </select>
+        <input type="number" placeholder="val" id="v2" oninput="inputCheck(this)">
+        <button onclick="calc()" disabled id="calcBtn">calc</button>
+    </div>
+    <div class = 'result'>
+        <input type="text" id="result">
+    </div>
+</body>
+</html>

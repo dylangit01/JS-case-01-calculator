@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Practice</title>
+    <link rel="stylesheet" href="cal01.css">
+</head>
+<body>
+<h1>Hello</h1>
+<input type="checkbox">
+<div class="result">
+    <input type="number" placeholder="val01" id="v1" oninput="inputCheck(this)" class="inputbox">
+    <select name="" id="type">
+        <option value="+">Add</option>
+        <option value="-">Subtract</option>
+        <option value="*">Multiple</option>
+        <option value="/">Divide</option>
+        <option value="%">Mod</option>
+        <option value="bmi" selected>BMI</option>
+    </select>
+    <input type="number" placeholder="val02" id="v2" oninput="inputCheck(this)" class="inputbox">
+    <button onclick="calc()" disabled id="calcBtn">Calc</button>
+</div>
+<div class="result">
+    <input type="number" placeholder="result" id="result" class="inputbox">
+</div>
+
+<div class="result">
+    <input type="text" placeholder="Your Name" id="name01" oninput="nameCheck(this)">
+    <input type="text" placeholder="Her/His Name" id="name02" oninput="nameCheck(this)">
+    <button onclick="loveMatch()" id="lovebtn" disabled>Love Score</button>
+</div>
+<div class="result">
+    <input type="number" placeholder="result" id="loveresult">
+</div>
+
+<div>
+    <button onclick="fizzBuzz2()">fizzBuzz</button>
+</div>
+
+<div>
+    <button onclick="fibonacciGenerator(2)">fibonacci</button>
+</div>
+
+</body>
+<script src="cal01.js"></script>
+</html>
